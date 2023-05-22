@@ -1,9 +1,6 @@
 package com.trackingappwk8.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -28,9 +25,16 @@ public class TodoItem implements Serializable {
 
   private Instant updatedAt;
 
+  @ManyToOne
+  @JoinColumn(
+          name = "user_id",
+          referencedColumnName = "id"
+  )
+  private User user;
+
   @Override
     public String toString() {
-        return String.format("TodoItem{id=%d, description= '%s', isComplete='%s', createdAt='%s', updatedAt='%s'}"
-        id, description, isComplete, createdAt, updatedAt);
+        return String.format("TodoItem{id=%d, description='%s', isComplete='%s', createdAt='%s', updatedAt='%s'}",
+                id, description, isComplete, createdAt, updatedAt);
   }
 }
