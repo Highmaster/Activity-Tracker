@@ -1,4 +1,4 @@
-package com.trackingappwk8.models;
+package com.trackingapp.models;
 
 import jakarta.persistence.*;
 import lombok.Getter;

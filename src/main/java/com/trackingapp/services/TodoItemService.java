@@ -1,11 +1,8 @@
-package com.trackingappwk8.services;
+package com.trackingapp.services;
 
-import com.trackingappwk8.models.TodoItem;
-import com.trackingappwk8.repositories.TodoItemRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.trackingapp.models.TodoItem;
 import org.springframework.stereotype.Service;
 
-import java.time.Instant;
 import java.util.Optional;
 
 @Service

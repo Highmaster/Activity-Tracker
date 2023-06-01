@@ -1,6 +1,6 @@
-package com.trackingappwk8.repositories;
+package com.trackingapp.repositories;
 
-import com.trackingappwk8.models.TodoItem;
+import com.trackingapp.models.TodoItem;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

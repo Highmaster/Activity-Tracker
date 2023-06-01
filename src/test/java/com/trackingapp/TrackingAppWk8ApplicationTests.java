@@ -1,4 +1,4 @@
-package com.trackingappwk8;
+package com.trackingapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
